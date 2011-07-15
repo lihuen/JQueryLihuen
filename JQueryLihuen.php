@@ -10,6 +10,7 @@ $wgHooks['ParserFirstCallInit'][] = 'JQueryLihuen::registerHooks';
 $wgExtensionMessagesFiles['JQueryLihuen'] = dirname( __FILE__ ) . '/JQueryLihuen.i18n.php';
 $wgResourceModules['ext.JQueryLihuen'] = array(
 	'scripts' => array('js/ext.JQueryLihuen.js'),
+	'styles' => array('css/ext.JQueryLihuen.css'),
 	'dependencies' => array('jquery.ui.tabs'),
 	'localBasePath' => dirname(__FILE__),
 	'remoteExtPath' => 'JQueryLihuen'
