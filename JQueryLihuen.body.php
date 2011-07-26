@@ -16,12 +16,12 @@ class JQueryLihuen {
 	}
 	public function renderTabs($input, array $args, Parser $parser, PPFrame $frame) {
 		#$output = $parser->recursiveTagParse($input, $frame);
-		$doc = new DOMDocument('1.0', "ISO-8859-1");
-		$doc->loadHTML($parser->recursiveTagParse($input, $frame));
+		$doc = new DOMDocument('1.0', "UTF-8");
+		$doc->loadHTML(utf8_decode($parser->recursiveTagParse($input, $frame)));
 		$doc = JQueryLihuen::renderTabsDoFormat($doc, "extJQueryLihuenTabs-" . JQueryLihuen::$tabcount);
 		JQueryLihuen::$tabcount++;
 	
-		return $doc->saveHTML();
+		return utf8_encode($doc->saveHTML());
 	}
 	function renderTabsGetHeadline(&$node, &$newDoc){
 		foreach ($node->childNodes as $child){
@@ -44,7 +44,7 @@ class JQueryLihuen {
 	}
 		
 	function renderTabsDoFormat(&$doc, $id){
-		$newDoc = new DOMDocument('1.0', "ISO-8859-1");
+		$newDoc = new DOMDocument('1.0', "UTF-8");
 		$container = $newDoc->createElement("div");
 		$container->setAttribute("id", $id);
 		$container->setAttribute("class", "extJQueryLihuenTabs");
