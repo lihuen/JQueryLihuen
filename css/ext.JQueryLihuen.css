@@ -1,0 +1,19 @@
+
+
+/** It must be hidden if JS is enabled, or visible otherwise */
+.extJQueryLihuenHide{
+	display: none;
+}
+/** It must be visible if JS is enabled, or hidden otherwise */
+.extJQueryLihuenShow{
+}
+
+.ui-widget-header {
+	background: #3ED057 url(/lihuen/resources/jquery.ui/themes/default/images/title-1.png) repeat scroll 50% 50%;
+}
+.ui-widget-header > .ui-widget-header  {
+	background: #3ED057 url(/lihuen/resources/jquery.ui/themes/default/images/title-2.png) repeat scroll 50% 50%;
+}
+.ui-widget-header > .ui-widget-header > .ui-widget-header {
+	background: #3ED057 url(/lihuen/resources/jquery.ui/themes/default/images/title-3.png) repeat scroll 50% 50%;
+}
