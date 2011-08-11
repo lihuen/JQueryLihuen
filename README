@@ -19,9 +19,10 @@ Contenido 3
 </div>
 </tabs>
 
-Donde cada div se convierte en una pestaña, el título de nivel 3 que se encuentra en el div se convierte en el nombre de la pestaña y el resto es el contenido.
+Donde cada div se convierte en una pestaña, el título de nivel 3 que se encuentra en el div
+se convierte en el nombre de la pestaña y el resto es el contenido.
 
-La extensión fue planeada para mostrar el contenido en una disposición razonable aún si está deshabilitado Javascript.
+La extensión fue planeada para mostrar el contenido en una disposición razonable aún si está
+deshabilitado Javascript.
 
-Se puede ver la extensión funcionando en:
-                               http://lihuen.linti.unlp.edu.ar/index.php?title=Descargas
+Se puede ver la extensión funcionando en: http://lihuen.linti.unlp.edu.ar/index.php?title=Descargas
