@@ -1,1 +1,27 @@
-Extensión para poder utilizar algunos widgets de JQueryUI en Mediawiki
+Extensión para poder utilizar algunos widgets de JQueryUI en Mediawiki.
+
+Actualmente solamente soporta tabs.
+
+Para crear 3 tabs usando esta extensión hay que escribir algo como lo que sigue:
+
+<tabs>
+<div>
+===Tab 1===
+Contenido 1
+</div>
+<div>
+===Tab 2===
+Contenido 2
+</div>
+<div>
+===Tab 3===
+Contenido 3
+</div>
+</tabs>
+
+Donde cada div se convierte en una pestaña, el título de nivel 3 que se encuentra en el div se convierte en el nombre de la pestaña y el resto es el contenido.
+
+La extensión fue planeada para mostrar el contenido en una disposición razonable aún si está deshabilitado Javascript.
+
+Se puede ver la extensión funcionando en:
+                               http://lihuen.linti.unlp.edu.ar/index.php?title=Descargas
