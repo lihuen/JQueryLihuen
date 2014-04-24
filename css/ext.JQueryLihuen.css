@@ -12,3 +12,54 @@
 	background: #B3C4AC;
 }
 
+.jcarousel {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.jcarousel-prev, .jcarousel-next {
+	border-radius: 30px;
+	background-color: #4E443C;
+	box-shadow: 0 0 4px #F0EFE7;
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	padding: 0;
+	color: #FFFFFF;
+	font: 24px/27px Arial,sans-serif;
+	text-align: center;
+	text-decoration: none;
+}
+.jcarousel-prev {
+	left: 5px;
+}
+.jcarousel-next {
+	right: 5px;
+}
+.jcarousel-pagination {
+	position: absolute;
+	left: 3px;
+	bottom: 23px;
+}
+.jcarousel-pagination a {
+	display: inline-block;
+	border-radius: 20px;
+	background-color: #4E443C;
+	box-shadow: 0 0 4px #F0EFE7;
+	height: 20px;
+	width: 20px;
+	color: #FFFFFF;
+	font: 14px/17px Arial,sans-serif;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	margin: -20px 3px 0;
+	opacity:0.3;
+	filter:alpha(opacity=30); /* For IE8 and earlier */
+}
+.jcarousel-pagination a.active {
+	opacity:1;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
+}
