@@ -30,9 +30,10 @@ $(function(){
 		.on('jcarouselpagination:inactive', 'a', function() {
 			$(this).removeClass('active');
 		});
-	// Controles
-	jcarousel.append('<a href="#" class="jcarousel-prev">&lt;</a>');
-	jcarousel.append('<a href="#" class="jcarousel-next">&gt;</a>');
+	// Controles (el a va a ser transparente y mucho más grande que el p,
+	// esto es para que funcione bien en touchscreens).
+	jcarousel.append('<a href="#" class="jcarousel-prev"><p>&lt;</p></a>');
+	jcarousel.append('<a href="#" class="jcarousel-next"><p>&gt;</p></a>');
 	$('.jcarousel-prev').jcarouselControl({target: '-=1'});
 	$('.jcarousel-next').jcarouselControl({target: '+=1'});
 	// Scroll automático

@@ -18,6 +18,17 @@
 }
 
 .jcarousel-prev, .jcarousel-next {
+	height: 150px;
+	width: 100px;
+	position: absolute;
+	top: 50%;
+	margin-top: -75px;
+	background: none;
+}
+.jcarousel-prev:active, .jcarousel-next:active, .jcarousel-prev:hover, .jcarousel-next:hover {
+	background: none;
+}
+.jcarousel-prev p, .jcarousel-next p {
 	border-radius: 30px;
 	background-color: #4E443C;
 	box-shadow: 0 0 4px #F0EFE7;
@@ -33,11 +44,18 @@
 	text-decoration: none;
 }
 .jcarousel-prev {
-	left: 5px;
+	left: 0px;
 }
 .jcarousel-next {
+	right: 0px;
+}
+.jcarousel-prev p {
+	left: 5px;
+}
+.jcarousel-next p {
 	right: 5px;
 }
+
 .jcarousel-pagination {
 	position: absolute;
 	left: 3px;
@@ -58,6 +76,7 @@
 	margin: -20px 3px 0;
 	opacity:0.3;
 	filter:alpha(opacity=30); /* For IE8 and earlier */
+	line-height: 1.3;
 }
 .jcarousel-pagination a.active {
 	opacity:1;
